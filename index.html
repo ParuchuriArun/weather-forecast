@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div id="screen">
+      <!-- City Name -->
+      <div class="city-name">
+        <i class="fa-solid fa-map-pin"></i>
+        <h1 id="city-name">Detecting location...</h1>
+      </div>
+
+      <!-- Current Date -->
+      <div class="current-date" id="current-date"></div>
+
+      <!-- Unit Toggle -->
+      <div class="unit-toggle">
+        <button class="unit-btn active" id="celsius-btn">°C</button>
+        <button class="unit-btn" id="fahrenheit-btn">°F</button>
+      </div>
+
+      <!-- Main Weather Icon -->
+      <div class="weather-icon-css">
+        <img
+          class="weather-icon"
+          id="current-weather-icon"
+          src=""
+          alt="Weather icon"
+        />
+      </div>
+
+      <!-- Weather Details -->
+      <div class="weather-description">
+        <div class="show-metric" id="metric">--°</div>
+
+        <div class="weather-details">
+          <div class="weather-main" id="weather-main">Loading...</div>
+
+          <div class="h-f">
+            <div class="show-humidity">
+              H: <span id="humidity">--</span>%
+            </div>
+            <span>||</span>
+            <div class="show-humidity">
+              F: <span id="feels-like">--°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast Section -->
+      <div class="forcasts-box">
+        <!-- Today Forecast -->
+        <div class="today-forecast">
+          <h4>TODAY</h4>
+
+          <div class="weather-icon-today">
+            <img
+              class="weather-icons"
+              id="today-weather-icon"
+              src=""
+              alt="Today's weather icon"
+            />
+          </div>
+
+          <div class="temp-today">
+            <span id="temp-min-today">--°</span>
+            <span>/ </span>
+            <span id="temp-max-today">--°</span>
+          </div>
+
+          <div class="weather-main-today" id="today-weather-main">
+            Loading...
+          </div>
+        </div>
+
+        <!-- 5 Day Forecast -->
+        <div class="future-forecast">
+          <h5>5-DAY FORECAST</h5>
+
+          <div id="future-forecast-box">
+            <div class="loading-text">Loading forecast...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="index.html">
+              <i class="fa-solid fa-location-arrow"></i>
+            </a>
+          </li>
+          <li>
+            <a href="search.html">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li>
+            <a href="world.html">
+              <i class="fa-solid fa-earth-americas"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
