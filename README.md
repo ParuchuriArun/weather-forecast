@@ -56,4 +56,4 @@ To use the Weather App, simply enter the name of the city in the search bar and 
 
 ## Contact
 For any inquiries, reach out at [arunparuchuri1@gmail.com](mailto:arunparuchuri1@gmail.com).<br>
-GitHub: [@kaushalsahu07](https://github.com/ParuchuriArun).<br>
+GitHub: [@ParuchuriArun](https://github.com/ParuchuriArun).<br>
